@@ -12,7 +12,8 @@ public class RDAccount extends Account {
 	 int n=4;
 	 int t=tenure;
 	 float r=rateOfInterest/100;
-	 float result=principal*(float)(Math.pow((1+r/n),n*t)-1);
+	 float amountdeposited=calculateAmountDeposited();
+	 float result=amountdeposited*(float)(Math.pow((1+r/n),n*t)-1);
 	 return result;
  }
  
